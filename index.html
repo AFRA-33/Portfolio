@@ -1,642 +1,278 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#243e36">
-  <meta name="description" content="Afra Siddiqui — Petroleum Engineering graduate, Operations Project Trainee and Data Analytics enthusiast. Explore my projects, skills and experience.">
-  <title>Afra Siddiqui | Engineering Meets Data</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#243e36" />
+  <meta name="description" content="Afra Siddiqui's portfolio — data analytics, Python, Excel, Power BI and data visualization." />
+  <title>Afra Siddiqui | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-
-  <!-- Navigation -->
   <header class="site-header">
     <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Afra Siddiqui home">
-        <span class="brand-mark">A<span>.</span></span>
-        <span>afra siddiqui<small>ENGINEERING × ANALYTICS</small></span>
-      </a>
-
-      <button class="menu-toggle" id="menuToggle"
-        aria-label="Open navigation menu" aria-expanded="false"
-        aria-controls="navLinks">
-        <span></span><span></span>
-      </button>
-
-      <div class="nav-links" id="navLinks">
+      <a class="logo" href="#home">afra<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <div class="nav-links">
         <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a class="nav-contact" href="#contact">Let's connect <span>↗</span></a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="nav-cta">Let's connect ↗</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- Hero -->
-    <section class="hero" id="home">
-      <div class="hero-orb orb-one"></div>
-      <div class="hero-orb orb-two"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="availability">
-            <span class="status-dot"></span>
-            ENGINEERING MINDS. DATA-DRIVEN SOLUTIONS.
-          </div>
-
-          <p class="eyebrow hero-eyebrow">HELLO, I'M AFRA SIDDIQUI</p>
-
-          <h1>
-            Turning real-world
-            challenges into
-            <span class="hero-highlight">meaningful insights.</span>
-          </h1>
-
-          <p class="hero-description">
-            Petroleum Engineering graduate working at the intersection of
-            terminal operations, data analytics and technology. I turn
-            operational data into clearer insights and better decisions.
-          </p>
-
-          <div class="hero-actions">
-             <a href="#projects" class="button button-primary">
-                View My Projects
-             </a>
-
-             <a href="#contact" class="button button-secondary">
-             Contact Me
-             </a>
-
-             <a href="assets/Afra-Siddiqui-CV.pdf"
-             class="button button-primary"
-             download>
-             Download CV <span>↓</span>
-             </a>
-          </div>
-
-          <div class="hero-socials">
-            <a href="https://github.com/AFRA-33"
-              target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            <span class="social-divider">/</span>
-            <a href="https://www.linkedin.com/in/afra-siddiqui-56b8462b5"
-              target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-            <span class="social-divider">/</span>
-            <a href="mailto:afrasiddiqui333@gmail.com">Email ↗</a>
-          </div>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> DATA ANALYTICS · PYTHON · POWER BI</div>
+        <h1>I turn data into <span class="accent">decisions</span> that make sense.</h1>
+        <p class="hero-text">
+          Hi, I'm Afra — an aspiring data analyst who enjoys finding patterns,
+          making messy data useful, and turning numbers into clear, practical insights.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore my work <span>↘</span></a>
+          <a class="btn outline" href="assets/Afra-Siddiqui-CV.pdf" download="Afra-Siddiqui-CV.pdf">Download CV <span>↓</span></a>
         </div>
-
-        <div class="hero-visual">
-          <div class="visual-label">MY PROFESSIONAL JOURNEY</div>
-
-          <div class="visual-card visual-main">
-            <div class="visual-top">
-              <span class="mini-label">CURRENT FOCUS</span>
-              <span class="visual-symbol">↗</span>
-            </div>
-            <div class="visual-monogram">A<span>.</span></div>
-            <h2>Engineering<br>meets analytics.</h2>
-            <p>Connecting field experience with analytical thinking.</p>
-            <div class="visual-tags">
-              <span>Operations</span>
-              <span>Data</span>
-              <span>Energy</span>
-            </div>
-          </div>
-
-          <div class="floating-card floating-top">
-            <span class="floating-icon">⌘</span>
-            <div><strong>Data Analytics</strong><small>From data to decisions</small></div>
-          </div>
-
-          <div class="floating-card floating-bottom">
-            <span class="floating-icon gold-icon">✳</span>
-            <div><strong>Petroleum Engineering</strong><small>Real-world operations</small></div>
-          </div>
-
-          <div class="visual-index">01 — A CURIOUS MIND, A PRACTICAL APPROACH</div>
+        <div class="social-links">
+          <a href="https://github.com/AFRA-33" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/afra-siddiqui-56b8462b5" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:afrasiddiqui333@gmail.com">Email ↗</a>
         </div>
       </div>
-
-      <a href="#about" class="scroll-cue">
-        <span></span> SCROLL TO EXPLORE
-      </a>
-    </section>
-
-    <!-- Introduction -->
-    <section class="intro section" id="about">
-      <div class="container">
-        <div class="section-kicker"><span>01</span> / A LITTLE ABOUT ME</div>
-
-        <div class="intro-grid">
-          <div>
-            <h2 class="section-title">
-              I see data as more than numbers.
-              <span>It's a way to ask better questions.</span>
-            </h2>
+      <div class="hero-art" aria-label="Data analytics illustration">
+        <div class="art-card">
+          <div class="art-top"><span>INSIGHTS / 01</span><span>↗</span></div>
+          <p class="art-label">From raw data</p>
+          <div class="mini-bars" aria-hidden="true">
+            <i style="height:35%"></i><i style="height:58%"></i>
+            <i style="height:45%"></i><i style="height:80%"></i>
+            <i style="height:65%"></i><i style="height:100%"></i>
           </div>
-
-          <div class="intro-content">
-            <p>
-              My journey began with Petroleum Engineering and a fascination
-              with how complex systems work. Today, my experience in
-              hydrocarbon terminal operations is shaping the way I approach
-              problems, understand processes and work with data.
-            </p>
-            <p>
-              I'm building my expertise in Python, Power BI, Excel and SQL
-              to bridge the gap between engineering knowledge and analytical
-              decision-making. I enjoy learning by building practical
-              projects, exploring datasets and improving the way information
-              is presented.
-            </p>
-
-            <div class="signature-line">
-              <span class="signature-mark">A.</span>
-              <span><strong>Curious by nature.</strong><small>Driven by continuous learning.</small></span>
-            </div>
-          </div>
+          <div class="art-divider"></div>
+          <p class="art-label">To meaningful insights.</p>
+          <div class="insight-row"><span>Patterns</span><b>Discover</b></div>
+          <div class="insight-row"><span>Performance</span><b>Measure</b></div>
+          <div class="insight-row"><span>Decisions</span><b>Improve</b></div>
         </div>
-
-        <div class="principles">
-          <article class="principle">
-            <span class="principle-number">01</span>
-            <h3>Think critically</h3>
-            <p>Understand the problem before searching for the answer.</p>
-          </article>
-          <article class="principle">
-            <span class="principle-number">02</span>
-            <h3>Work with purpose</h3>
-            <p>Focus on solutions that make information more useful.</p>
-          </article>
-          <article class="principle">
-            <span class="principle-number">03</span>
-            <h3>Keep evolving</h3>
-            <p>Learn new tools, test ideas and grow through practice.</p>
-          </article>
-        </div>
+        <span class="floating-tag tag-one">Python</span>
+        <span class="floating-tag tag-two">Power BI</span>
+        <span class="art-orbit"></span>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section class="experience section" id="experience">
-      <div class="container">
-        <div class="section-kicker"><span>02</span> / WHERE I'VE BEEN</div>
-
-        <div class="section-heading-row">
-          <h2 class="section-title">Experience that<br><span>shapes my perspective.</span></h2>
-          <p class="section-aside">
-            Learning from real operations, collaborating with teams and
-            applying engineering principles in practical environments.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <article class="timeline-item">
-            <div class="timeline-date">DEC 2025 — PRESENT</div>
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="experience-topline">
-                <div>
-                  <h3>Project Trainee — Operations</h3>
-                  <p class="company">Karachi Hydrocarbon Terminal (KHT)</p>
-                </div>
-                <span class="experience-type">FULL-TIME TRAINEE</span>
-              </div>
-              <p>
-                Supporting terminal operations, operational reporting,
-                work-order tracking, safety documentation and process
-                improvement initiatives in a hydrocarbon storage and
-                handling environment.
-              </p>
-              <div class="tag-list">
-                <span>Terminal Operations</span>
-                <span>Excel Reporting</span>
-                <span>HSE & PTW</span>
-                <span>Process Documentation</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">JUL — AUG 2025</div>
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="experience-topline">
-                <div>
-                  <h3>Drilling & Completion Intern</h3>
-                  <p class="company">Pakistan Petroleum Limited (PPL)</p>
-                </div>
-                <span class="experience-type">INTERNSHIP</span>
-              </div>
-              <p>
-                Gained exposure to drilling and completion operations,
-                field workflows, operational practices and the importance
-                of safety in upstream oil and gas activities.
-              </p>
-              <div class="tag-list">
-                <span>Drilling</span>
-                <span>Completion</span>
-                <span>Upstream Oil & Gas</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">SEP — NOV 2024</div>
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="experience-topline">
-                <div>
-                  <h3>Power BI Intern</h3>
-                  <p class="company">Cognifyz Technologies · Remote</p>
-                </div>
-                <span class="experience-type">INTERNSHIP</span>
-              </div>
-              <p>
-                Developed practical experience in data visualization,
-                dashboard creation and communicating insights through
-                analytical reports.
-              </p>
-              <div class="tag-list">
-                <span>Power BI</span>
-                <span>Data Visualization</span>
-                <span>Reporting</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">INDUSTRY EXPOSURE</div>
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <div class="experience-topline">
-                <div>
-                  <h3>Gas Utility & Research Exposure</h3>
-                  <p class="company">SSGC · Fuel Research Center</p>
-                </div>
-                <span class="experience-type">FIELD LEARNING</span>
-              </div>
-              <p>
-                Additional exposure to gas distribution, LPG handling and
-                fuel-related research environments, broadening my
-                understanding of energy operations.
-              </p>
-            </div>
-          </article>
-        </div>
+    <section class="quick-strip">
+      <div class="container strip-inner">
+        <span>CURIOUS BY NATURE</span><span>DATA-DRIVEN THINKING</span>
+        <span>VISUAL STORYTELLING</span><span>ALWAYS LEARNING</span>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="projects section" id="projects">
-      <div class="container">
-        <div class="section-kicker"><span>03</span> / SELECTED WORK</div>
-
-        <div class="section-heading-row">
-          <h2 class="section-title">Ideas turned into<br><span>practical projects.</span></h2>
-          <p class="section-aside">
-            A selection of engineering and analytics projects that reflect
-            my curiosity, technical learning and problem-solving approach.
-          </p>
-        </div>
-
-        <div class="project-grid">
-
-          <article class="project-card project-featured">
-            <div class="project-art art-dashboard">
-              <div class="art-window">
-                <div class="art-window-top"><span></span><span></span><span></span><b>PERFORMANCE OVERVIEW</b></div>
-                <div class="art-kpis">
-                  <div><small>METRIC 01</small><strong>01</strong></div>
-                  <div><small>METRIC 02</small><strong>02</strong></div>
-                  <div><small>METRIC 03</small><strong>03</strong></div>
-                </div>
-                <div class="art-chart">
-                  <span style="height:35%"></span><span style="height:54%"></span>
-                  <span style="height:44%"></span><span style="height:75%"></span>
-                  <span style="height:61%"></span><span style="height:90%"></span>
-                  <span style="height:70%"></span><span style="height:100%"></span>
-                </div>
-              </div>
-              <span class="art-label">01 / DATA VISUALIZATION</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>POWER BI · EXCEL</span><span>01</span></div>
-              <h3>Operational Performance Dashboard</h3>
-              <p>
-                A dashboard concept for monitoring terminal operations,
-                monthly product movements, key performance indicators and
-                work-order performance through interactive reporting.
-              </p>
-              <div class="tag-list"><span>KPIs</span><span>Data Modeling</span><span>Reporting</span></div>
-              <a class="project-link" href="https://github.com/AFRA-33"
-                target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-art art-python">
-              <span class="code-deco">01</span>
-              <div class="code-lines">
-                <p><span>import</span> pandas <span>as</span> pd</p>
-                <p>data = pd.read_csv(<em>"sales.csv"</em>)</p>
-                <p>data.describe()</p>
-                <p><span># discover patterns</span></p>
-              </div>
-              <span class="art-label">02 / EXPLORATORY ANALYSIS</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>PYTHON · EDA</span><span>02</span></div>
-              <h3>Video Game Sales Analysis</h3>
-              <p>
-                Explored sales across genres, platforms and global regions
-                to identify market patterns, leading titles and regional
-                differences using Python.
-              </p>
-              <div class="tag-list"><span>Pandas</span><span>Visualization</span><span>EDA</span></div>
-              <a class="project-link" href="https://github.com/AFRA-33"
-                target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-art art-reservoir">
-              <div class="reservoir-diagram">
-                <div class="reservoir-well"></div>
-                <div class="reservoir-layer layer-one"></div>
-                <div class="reservoir-layer layer-two"></div>
-                <div class="reservoir-layer layer-three"></div>
-                <span class="reservoir-point point-one"></span>
-                <span class="reservoir-point point-two"></span>
-                <span class="reservoir-point point-three"></span>
-              </div>
-              <span class="art-label">03 / RESERVOIR SIMULATION</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>CMG · RESERVOIR ENGINEERING</span><span>03</span></div>
-              <h3>Radial Reservoir Waterflooding</h3>
-              <p>
-                Investigated waterflooding performance through reservoir
-                simulation, examining pressure, production, recovery
-                and water-cut behavior.
-              </p>
-              <div class="tag-list"><span>CMG</span><span>Simulation</span><span>EOR</span></div>
-              <a class="project-link" href="https://github.com/AFRA-33"
-                target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-art art-ml">
-              <div class="ml-grid">
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-                <span></span><span></span><span></span><span></span>
-              </div>
-              <div class="ml-caption">LITHOLOGY<br><strong>CLASSIFICATION</strong></div>
-              <span class="art-label">04 / MACHINE LEARNING</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>PYTHON · MACHINE LEARNING</span><span>04</span></div>
-              <h3>Lithofacies Prediction</h3>
-              <p>
-                Explored machine learning for lithology classification
-                using the FORCE 2020 dataset, with a focus on geological
-                features and prediction confidence.
-              </p>
-              <div class="tag-list"><span>Classification</span><span>Geoscience</span><span>Python</span></div>
-              <a class="project-link" href="https://github.com/AFRA-33"
-                target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-art art-eor">
-              <div class="eor-circles">
-                <span class="eor-circle circle-one"></span>
-                <span class="eor-circle circle-two"></span>
-                <span class="eor-circle circle-three"></span>
-                <span class="eor-center">EOR</span>
-              </div>
-              <span class="art-label">05 / FINAL YEAR PROJECT</span>
-            </div>
-            <div class="project-body">
-              <div class="project-meta"><span>PETROLEUM ENGINEERING</span><span>05</span></div>
-              <h3>Polymer-Assisted Enhanced Oil Recovery</h3>
-              <p>
-                Studied low-salinity water and guar-gum polymer interactions
-                with porous rock, investigating wettability, mobility ratio
-                and oil-recovery mechanisms.
-              </p>
-              <div class="tag-list"><span>Core Flooding</span><span>Guar Gum</span><span>EOR</span></div>
-              <a class="project-link" href="https://github.com/AFRA-33"
-                target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a>
-            </div>
-          </article>
-
-          <article class="project-card project-note">
-            <div class="note-symbol">+</div>
-            <p class="note-kicker">ALWAYS IN PROGRESS</p>
-            <h3>More questions.<br>More things to build.</h3>
-            <p>
-              I'm continuously learning, experimenting with new tools
-              and developing projects that connect data with real-world
-              engineering problems.
-            </p>
-            <a class="project-link" href="https://github.com/AFRA-33"
-              target="_blank" rel="noopener noreferrer">Find my latest work <span>↗</span></a>
-          </article>
-
-        </div>
-
-        <div class="projects-footer">
-          <p>Interested in how I approach problems?</p>
-          <a href="https://github.com/AFRA-33"
-            target="_blank" rel="noopener noreferrer" class="button button-dark">
-            Visit my GitHub <span>↗</span>
-          </a>
-        </div>
+    <section class="section container" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>Curiosity first.<br /><span class="accent">Insights always.</span></h2>
       </div>
-    </section>
-
-    <!-- Skills -->
-    <section class="skills section" id="skills">
-      <div class="container">
-        <div class="section-kicker"><span>04</span> / MY TOOLKIT</div>
-
-        <div class="section-heading-row">
-          <h2 class="section-title">Different disciplines.<br><span>One analytical mindset.</span></h2>
-          <p class="section-aside">
-            The tools and technical foundations I use to explore data,
-            understand engineering processes and communicate findings.
-          </p>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card">
-            <div class="skill-icon">01</div>
-            <h3>Data Analytics</h3>
-            <p>Turning raw information into meaningful patterns.</p>
-            <ul>
-              <li>Exploratory Data Analysis</li>
-              <li>Data Cleaning & Validation</li>
-              <li>Trend & Statistical Analysis</li>
-              <li>Python · Pandas · NumPy</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <div class="skill-icon">02</div>
-            <h3>Business Intelligence</h3>
-            <p>Making complex information easier to understand.</p>
-            <ul>
-              <li>Power BI Dashboards</li>
-              <li>Excel & Power Query</li>
-              <li>DAX & KPI Reporting</li>
-              <li>PivotTables & Data Modeling</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <div class="skill-icon">03</div>
-            <h3>Engineering</h3>
-            <p>Applying technical knowledge to operational problems.</p>
-            <ul>
-              <li>Petroleum Engineering</li>
-              <li>Reservoir Simulation · CMG</li>
-              <li>Enhanced Oil Recovery</li>
-              <li>Terminal Operations & HSE</li>
-            </ul>
-          </article>
-
-          <article class="skill-card">
-            <div class="skill-icon">04</div>
-            <h3>Technical Foundations</h3>
-            <p>Building reliable and repeatable workflows.</p>
-            <ul>
-              <li>SQL Fundamentals</li>
-              <li>Data Visualization</li>
-              <li>Git & GitHub</li>
-              <li>Research & Problem Solving</li>
-            </ul>
-          </article>
-        </div>
-        <p class="skills-note">
-          My toolkit continues to grow as I work on new projects and
-          strengthen my technical foundations.
+      <div class="about-content">
+        <p>
+          I’m building my career around data analytics because I like asking
+          questions, investigating what the numbers are saying, and communicating
+          the answer in a way people can actually use.
+        </p>
+        <p>
+          My work spans Python-based exploratory analysis, Excel reporting, and
+          Power BI dashboards. I’m especially interested in making data easier
+          to understand — whether that means cleaning a dataset, spotting a
+          trend, or designing a useful KPI report.
+        </p>
+        <p>
+          I’m still learning, experimenting, and improving with every project.
+          I value clear thinking, honest findings, and work that solves a real problem.
         </p>
       </div>
     </section>
 
-    <!-- Education -->
-    <section class="education section" id="education">
-      <div class="container education-grid">
-        <div>
-          <div class="section-kicker"><span>05</span> / THE FOUNDATION</div>
-          <h2 class="section-title">Built on engineering.<br><span>Growing through data.</span></h2>
-          <p class="education-description">
-            My academic background developed my technical thinking,
-            research skills and understanding of subsurface energy systems.
-            I'm building on that foundation through practical analytics
-            and continuous learning.
-          </p>
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">MY TOOLKIT</p>
+          <h2>Tools I use to <span class="accent">find the story.</span></h2>
+          <p class="section-subtitle">A practical toolkit for exploring, analyzing, and presenting data.</p>
         </div>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <div class="skill-icon">Ex</div>
+            <h3>Excel & Reporting</h3>
+            <p>PivotTables, advanced formulas, data validation, reporting and KPI tracking.</p>
+            <div class="skill-tags"><span>Excel</span><span>Power Query</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">BI</div>
+            <h3>Business Intelligence</h3>
+            <p>Interactive dashboards, data modeling, performance measures and visual reporting.</p>
+            <div class="skill-tags"><span>Power BI</span><span>DAX</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">Py</div>
+            <h3>Python Analysis</h3>
+            <p>Cleaning, transforming, exploring, and visualizing datasets to identify trends.</p>
+            <div class="skill-tags"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span></div>
+          </article>
+          <article class="skill-card">
+            <div class="skill-icon">SQL</div>
+            <h3>Data Fundamentals</h3>
+            <p>Exploratory analysis, descriptive statistics, data quality checks and foundational SQL.</p>
+            <div class="skill-tags"><span>EDA</span><span>Statistics</span><span>SQL basics</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <article class="education-card">
-          <div class="education-top">
-            <span class="education-badge">BE</span>
-            <span class="education-period">2021 — 2025</span>
+    <section class="section container" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2>Projects with a <span class="accent">purpose.</span></h2>
+        <p class="section-subtitle">A selection of analytics projects, from exploring trends to communicating findings.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card featured">
+          <div class="project-visual visual-green">
+            <span class="visual-label">01 / EXPLORATORY DATA ANALYSIS</span>
+            <div class="game-visual">
+              <span>GAME</span><span>SALES</span><span>INSIGHTS</span>
+              <div class="visual-line"></div>
+              <small>GENRES · REGIONS · TRENDS</small>
+            </div>
           </div>
-          <p class="mini-label">BACHELOR'S DEGREE</p>
-          <h3>Petroleum Engineering</h3>
-          <p class="company">Dawood University of Engineering & Technology</p>
-          <div class="education-divider"></div>
-          <p class="education-focus">ACADEMIC FOCUS</p>
-          <div class="tag-list">
-            <span>Reservoir Engineering</span>
-            <span>Enhanced Oil Recovery</span>
-            <span>Research</span>
+          <div class="project-body">
+            <div class="project-meta"><span>Python</span><span>Pandas</span><span>EDA</span></div>
+            <h3>Video Game Sales Analysis</h3>
+            <p>Explored sales across games, genres, platforms, and regions to identify leading titles and market patterns.</p>
+            <a class="project-link" href="https://github.com/AFRA-33" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-gold">
+            <span class="visual-label">02 / FINANCIAL ANALYSIS</span>
+            <div class="finance-visual">
+              <div class="finance-number">DATA <span>→</span> SIGNAL</div>
+              <svg viewBox="0 0 320 110" role="img" aria-label="Illustrative rising trend line">
+                <path d="M4 88 L45 72 L82 81 L121 44 L157 57 L198 24 L235 39 L275 10 L316 17" fill="none" stroke="#f1f7ed" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <small>ANALYZE · TEST · EVALUATE</small>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Python</span><span>Analysis</span></div>
+            <h3>Financial Analysis & Backtesting</h3>
+            <p>Worked with financial data to explore performance and evaluate a backtesting approach. Findings should be interpreted with appropriate risk context.</p>
+            <a class="project-link" href="https://github.com/AFRA-33" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-dark">
+            <span class="visual-label">03 / CLASSIFICATION</span>
+            <div class="class-visual">
+              <div class="class-row"><span>Class A</span><i style="width:82%"></i></div>
+              <div class="class-row"><span>Class B</span><i style="width:57%"></i></div>
+              <div class="class-row"><span>Class C</span><i style="width:69%"></i></div>
+              <div class="class-row"><span>Class D</span><i style="width:38%"></i></div>
+              <small>MODEL OUTPUT · ILLUSTRATIVE</small>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Python</span><span>Machine Learning</span></div>
+            <h3>FORCE 2020 Lithofacies Classification</h3>
+            <p>Explored a classification workflow using well-log data, with a focus on lithology prediction and model confidence.</p>
+            <a class="project-link" href="https://github.com/AFRA-33" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-mint">
+            <span class="visual-label">04 / DASHBOARD DESIGN</span>
+            <div class="dashboard-visual">
+              <div class="dash-kpis"><i></i><i></i><i></i></div>
+              <div class="dash-chart"><i style="height:32%"></i><i style="height:64%"></i><i style="height:48%"></i><i style="height:83%"></i><i style="height:58%"></i><i style="height:94%"></i></div>
+              <small>KPIs · TRENDS · REPORTING</small>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta"><span>Excel</span><span>Power BI</span><span>KPIs</span></div>
+            <h3>Operations Performance Dashboard</h3>
+            <p>Developing a dashboard-driven approach to reporting, with a focus on monthly performance, KPIs, and clearer data summaries.</p>
+            <a class="project-link" href="https://github.com/AFRA-33" target="_blank" rel="noopener noreferrer">View project <span>↗</span></a>
           </div>
         </article>
       </div>
+      <p class="project-note">Project links currently open my GitHub profile. Replace them with each project's repository URL when it is published.</p>
     </section>
 
-    <!-- Contact -->
-    <section class="contact section" id="contact">
-      <div class="container contact-box">
-        <div class="contact-decoration decoration-one"></div>
-        <div class="contact-decoration decoration-two"></div>
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY JOURNEY</p>
+          <h2>Learning through <span class="accent">real work.</span></h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">DEC 2025 — PRESENT</div>
+            <div class="timeline-content">
+              <h3>Project Trainee — Operations</h3>
+              <p class="company">Karachi Hydrocarbon Terminal (KHT)</p>
+              <p>Contributing to operational reporting, Excel-based performance tracking, record organization, and KPI monitoring in a live operational environment. This experience strengthens my understanding of data quality, practical reporting needs, and how teams use information.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">SEP 2024 — NOV 2024</div>
+            <div class="timeline-content">
+              <h3>Power BI Intern</h3>
+              <p class="company">Cognifyz Technologies · Remote</p>
+              <p>Built practical experience with Power BI, data preparation, dashboard development, and presenting information through visual reports.</p>
+            </div>
+          </article>
+        </div>
+        <div class="education-block">
+          <div class="education-icon">✳</div>
+          <div>
+            <p class="eyebrow">EDUCATION</p>
+            <h3>BE, Petroleum Engineering</h3>
+            <p>Dawood University of Engineering & Technology · 2021–2025</p>
+            <p class="education-note">My degree taught me to approach technical problems methodically. Today, I bring that same analytical mindset to data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="section-kicker contact-kicker"><span>06</span> / YOUR TURN</div>
-
-        <p class="contact-overline">HAVE AN OPPORTUNITY OR AN IDEA?</p>
-        <h2>Let's make something<br><span>meaningful happen.</span></h2>
-        <p class="contact-description">
-          I'm open to conversations about data analytics, engineering,
-          energy, collaboration and opportunities where curiosity meets
-          real-world problem solving.
-        </p>
-
-        <a class="button button-gold"
-          href="mailto:afrasiddiqui333@gmail.com?subject=Professional%20Opportunity">
-          Say hello <span>↗</span>
-        </a>
-
-        <div class="contact-links">
-          <a href="mailto:afrasiddiqui333@gmail.com">EMAIL ↗</a>
-          <a href="https://www.linkedin.com/in/afra-siddiqui-56b8462b5"
-            target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
-          <a href="https://github.com/AFRA-33"
-            target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
+    <section class="contact-section" id="contact">
+      <div class="container contact-inner">
+        <p class="eyebrow">HAVE A PROJECT OR OPPORTUNITY?</p>
+        <h2>Let's make data<br />more <span>meaningful.</span></h2>
+        <p class="contact-text">I'm open to data analytics opportunities, collaborations, and conversations with people who enjoy solving problems with data.</p>
+        <a class="btn light-btn" href="mailto:afrasiddiqui333@gmail.com">Email me <span>↗</span></a>
+        <div class="contact-details">
+          <a href="mailto:afrasiddiqui333@gmail.com">afrasiddiqui333@gmail.com</a>
+          <a href="https://github.com/AFRA-33" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/afra-siddiqui-56b8462b5" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <a class="footer-brand" href="#home">A<span>.</span></a>
-      <p>Designed with curiosity. Built with purpose.</p>
-      <a href="#home" class="back-to-top">BACK TO TOP ↑</a>
-      <p class="copyright">© <span id="year">2026</span> AFRA SIDDIQUI</p>
+      <a class="logo" href="#home">afra<span>.</span></a>
+      <p>Built with curiosity, coffee, and a love of data.</p>
+      <p>© <span id="year"></span> Afra Siddiqui</p>
     </div>
   </footer>
-
-  <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const navLinks = document.getElementById("navLinks");
-
-    menuToggle.addEventListener("click", () => {
-      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-      menuToggle.setAttribute("aria-expanded", String(!isOpen));
-      menuToggle.setAttribute(
-        "aria-label",
-        isOpen ? "Open navigation menu" : "Close navigation menu"
-      );
-      navLinks.classList.toggle("is-open", !isOpen);
-    });
-
-    navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("is-open");
-        menuToggle.setAttribute("aria-expanded", "false");
-        menuToggle.setAttribute("aria-label", "Open navigation menu");
-      });
-    });
-
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
-  </script>
-
 </body>
 </html>
